@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
 @CucumberOptions(
         features = "src/test/resources/features",
         glue = {"stepDefinitions"},
-        tags = "@api", // Change to "@ui" for UI, or remove/use "@api or @ui" to run both
+        tags = "@api or @ui", // Change to "@ui" for UI, or remove/use "@api or @ui" to run both
         plugin = {
                 "pretty",
                 "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"

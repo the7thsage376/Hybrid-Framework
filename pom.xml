@@ -30,7 +30,6 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.51.0</version>
-            <scope>test</scope>
         </dependency>
 
         <!-- Source: https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
