@@ -1,2 +1,4 @@
 .idea/
 config.properties/
+allure-results/
+target/

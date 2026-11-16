@@ -31,9 +31,7 @@ public class RequestBuilder extends BaseUri {
 
     }
 
-
     // 2. get request of getting profile.
-
     public static Response getProfile() {
 
         String apiPath = "/APIDEV/profile";
@@ -50,6 +48,7 @@ public class RequestBuilder extends BaseUri {
         return response;
 
     }
+
     // 3. post request of changing the profile picture.
     public static Response postProfile() {
 
@@ -59,8 +58,7 @@ public class RequestBuilder extends BaseUri {
                 .baseUri(BASE_URL)
                 .basePath(apiPath)
                 .header("Authorization", "Bearer " + AuthToken)
-                .multiPart("profileImage", new File("\"src/test/resources/testData/profilePicture.png\""), "image/png")
-                .log().all()
+                .multiPart("profileImage", new File("src/test/resources/testData/profilePicture.png"), "image/png")
                 .post().prettyPeek()
                 .then().extract().response();
 

@@ -78,6 +78,13 @@
             <scope>test</scope>
         </dependency>
 
+        <dependency>
+            <groupId>io.qameta.allure</groupId>
+            <artifactId>allure-cucumber7-jvm</artifactId>
+            <version>3.1.1</version>
+            <scope>test</scope>
+        </dependency>
+
 
 
 
