@@ -31,9 +31,9 @@ public class LoginPage {
     @FindBy(css ="#login-submit")
     WebElement loginSubmit;
 
-    public void ClickLoginButton() {
-        wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
-    }
+//    public void ClickLoginButton() {
+//        wait.until(ExpectedConditions.elementToBeClickable(loginButton)).click();
+//    }
 
     public void EnterLoginEmail(String email) {
         wait.until(ExpectedConditions.elementToBeClickable(loginEmail)).sendKeys(email);
@@ -48,7 +48,7 @@ public class LoginPage {
     }
 
     public void loginToNdosi(String email, String password){
-        ClickLoginButton();
+//        ClickLoginButton();
         EnterLoginEmail(email);
         EnterLoginPassword(password);
         ClickLoginSubmit();

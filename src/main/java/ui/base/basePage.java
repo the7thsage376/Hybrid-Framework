@@ -15,7 +15,7 @@ public class basePage {
         "https://ndosisimplifiedautomation.vercel.app/#practice"
     );
 
-    LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
-    DashboardPage dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
-    MyProfilePage myProfilePage = PageFactory.initElements(driver, MyProfilePage.class);
+    protected LoginPage loginPage = PageFactory.initElements(driver, LoginPage.class);
+    protected DashboardPage dashboardPage = PageFactory.initElements(driver, DashboardPage.class);
+    protected MyProfilePage myProfilePage = PageFactory.initElements(driver, MyProfilePage.class);
 }

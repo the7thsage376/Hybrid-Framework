@@ -1,4 +1,4 @@
 .idea/
-config.properties/
+src/test/resources/config/config.properties
 allure-results/
 target/
