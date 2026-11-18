@@ -79,5 +79,4 @@ jobs:
             - Status: ${{ job.status }}
             - Workflow Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
 
-            The generated Allure HTML report is attached as allure-report.zip (extract and open index.html, or view via a local server).
-          attachments: allure-report.zip
+        
