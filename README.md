@@ -1,3 +1,5 @@
+[![Hybrid API & UI Test Automation Pipeline](https://github.com/the7thsage376/Hybrid-Framework/actions/workflows/hybrid-test-pipeline.yml/badge.svg)](https://github.com/the7thsage376/Hybrid-Framework/actions/workflows/hybrid-test-pipeline.yml)
+
 # Hybrid-Framework
 
 A Java-based hybrid test automation framework for testing both REST API and browser UI flows. It combines **Cucumber BDD**, **TestNG**, **REST Assured**, **Selenium WebDriver**, and **Allure reporting** in a Maven project.
