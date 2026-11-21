@@ -45,6 +45,12 @@ jobs:
           allure_report: allure-report
           keep_reports: 1
 
+      - name: Fix Allure Report Permissions
+        if: always()
+        run: |
+          sudo chown -R $USER:$USER allure-report
+          sudo chmod -R a+rX allure-report
+
       - name: Zip Allure Report for Email Attachment
         if: always()
         run: zip -r allure-report.zip allure-report/
@@ -69,6 +75,7 @@ jobs:
           subject: "Hybrid Automation Suite (${{ job.status }}) - ${{ github.repository }}"
           to: ${{ secrets.MAIL_USERNAME }}
           from: "GitHub Actions QA Bot <${{ secrets.MAIL_USERNAME }}>"
+          attachments: allure-report.zip
           body: |
             Hi Lerato,
 
