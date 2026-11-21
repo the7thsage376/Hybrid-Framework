@@ -51,10 +51,6 @@ jobs:
           sudo chown -R $USER:$USER allure-report
           sudo chmod -R a+rX allure-report
 
-      - name: Zip Allure Report for Email Attachment
-        if: always()
-        run: zip -r allure-report.zip allure-report/
-
       - name: Upload Allure Report Artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -74,8 +70,7 @@ jobs:
           password: ${{ secrets.MAIL_PASSWORD }}
           subject: "Hybrid Automation Suite (${{ job.status }}) - ${{ github.repository }}"
           to: ${{ secrets.MAIL_USERNAME }}
-          from: "GitHub Actions QA Bot <${{ secrets.MAIL_USERNAME }}>"
-          attachments: allure-report.zip
+          from: "GitHub Actions Hybrid Framework pipeline <${{ secrets.MAIL_USERNAME }}>"
           body: |
             Hi Lerato,
 

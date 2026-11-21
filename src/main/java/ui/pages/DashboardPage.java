@@ -18,7 +18,7 @@ public class DashboardPage {
         PageFactory.initElements(driver, this);
     }
 // Add the locator for asserting we're on the dashboard page here
-    @FindBy(xpath = "//*[contains(text(), 'Welcome')]")
+    @FindBy(xpath = "//*[contains(., 'Welcome')]")
     WebElement welcomeMessage;
 
     @FindBy(xpath = "//button//span[text() = 'Menu']")
